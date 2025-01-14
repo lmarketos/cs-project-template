@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Week 1 Build",
+      "command": "d:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "main.cpp",
+        "${workspaceFolder}/common/helper.cpp",
+        "-I",
+        "${workspaceFolder}/common",
+        "-o",
+        "week1.exe",
+        "-static-libgcc",
+        "-static-libstdc++"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/week1"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "cppbuild",
+      "label": "Week 2 Build",
+      "command": "d:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "*.cpp",
+        "${workspaceFolder}/common/helper.cpp",
+        "-I",
+        "${workspaceFolder}/common",
+        "-o",
+        "week2.exe",
+        "-static-libgcc",
+        "-static-libstdc++"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/week2"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    } 
+  ],
+  "version": "2.0.0"
+}
